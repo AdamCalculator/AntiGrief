@@ -1,9 +1,6 @@
-# Fabric Example Mod
+# AntiGreaf
+EN:
+This mod will kick you when your totem falls off (if the mod detects griefer behavior. Crystals, respawn anchors, etc.)
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+RU:
+Этот мод кикнет вас когда у вас слетает тотем (если мод обнаружил гриферское поведение. Кристалы, якори возрождения т.п.)
