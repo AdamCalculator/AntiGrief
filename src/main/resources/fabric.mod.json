@@ -3,7 +3,7 @@
 	"id": "antigrief",
 	"version": "${version}",
 	"name": "AntiGrief",
-	"description": "Automatic kick in a situation when you are griefed and your immortality totem is spent",
+	"description": "This mod will disconnect you from the server when you have no totem left in your hand (if the mod has detected griefer behavior. Crystals, respawn anchors, etc.)",
 	"authors": [
 		"AdamCalculator",
 		"Arived56"

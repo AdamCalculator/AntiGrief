@@ -3,7 +3,9 @@ package com.thombsonadam.antigrief.state;
 import com.thombsonadam.antigrief.Mod;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class State {
     private boolean isClam;
@@ -104,26 +106,40 @@ public class State {
     }
 
     public String debug() {
-        return String.format("delay=%s; flc=%s; flUnC=%s; trrgrs=%s", cachedDelay, fromLastClam(), fromLastUnClam(), triggers.size());
+        return String.format("D=%s; TRIGs=%s; totKick=%s", cachedDelay, triggers.size(), isTotemDisappearedToKick);
     }
 
     public String kickAddiction() {
         StringBuilder sb = new StringBuilder("§a");
 
-        int i = 0;
+        Set<String> tr = new HashSet<>();
+
+        List<List<Trigger>> lists = new ArrayList<>();
+
         if (!previousTriggers.isEmpty()) {
-            for (Trigger trigger : previousTriggers.get(previousTriggers.size() - 1)) {
-                sb.append("\n * ").append(trigger.getDescription());
-                i++;
-                if (i > 7) {
-                    break;
-                }
+            int index = previousTriggers.size()-1;
+            while (index >= 0) {
+                lists.add(previousTriggers.get(index));
+                index--;
             }
         }
 
 
-        if (i > 7) {
-            sb.append("\n.....");
+        for (List<Trigger> list : lists) {
+            for (Trigger trigger : list) {
+                tr.add(trigger.getDescription());
+            }
+        }
+
+
+        int i = 0;
+        for (String s : tr) {
+            sb.append("\n").append(" * ").append(s);
+            i++;
+            if (i > 9) {
+                sb.append("\n...");
+                break;
+            }
         }
 
         return sb.toString();
