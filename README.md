@@ -1,6 +1,8 @@
 # AntiGreaf
-EN:
-This mod will kick you when your totem falls off (if the mod detects griefer behavior. Crystals, respawn anchors, etc.)
+**EN:**
+This mod will disconnect you from the server when you have no totem left in your hand (if the mod has detected griefer behavior. Crystals, rebirth anchors, etc.)
 
-RU:
-Этот мод кикнет вас когда у вас слетает тотем (если мод обнаружил гриферское поведение. Кристалы, якори возрождения т.п.)
+<br>
+
+**RU:**
+Этот мод отключит вас от сервера когда у вас в руках не остаётся тотема. (Только если мод обнаружил гриферское поведение. Кристалы, якори возрождения т.п.)
