@@ -3,15 +3,15 @@
 	"id": "antigrief",
 	"version": "${version}",
 	"name": "AntiGrief",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Automatic kick in a situation when you are griefed and your immortality totem is spent",
 	"authors": [
-		"Me!"
+		"AdamCalculator",
+		"Arived56"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/AdamCalculator/AntiGrief"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/antigrief/icon.png",
 	"environment": "client",
 	"entrypoints": {
