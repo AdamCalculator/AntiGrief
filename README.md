@@ -1,4 +1,6 @@
 # AntiGreaf
+https://modrinth.com/mod/antigrief
+
 **EN:**
 This mod will disconnect you from the server when you have no totem left in your hand (if the mod has detected griefer behavior. Crystals, rebirth anchors, etc.)
 
